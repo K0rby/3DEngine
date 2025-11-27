@@ -1,11 +1,8 @@
-#include <iostream>
-// glad: carregador de funções OpenGL (carrega os ponteiros das funções)
-#include <glad/glad.h>
-// GLFW: cria janelas e gerencia contexto/entrada
-#include <GLFW/glfw3.h>
+#include "config.h"
 
 // Código GLSL do Vertex Shader (executado para cada vértice)
-// Este shader pega a posição do vértice e define a posição final na tela.
+// Este shader pega a posição do vértice e define a posição final na tela. 
+// aPos vai conter os vertices x,y,z e o 1.0 é para coordenada w (homogênea).
 const char* vertexShaderSource = R"(
 #version 330 core
 layout (location = 0) in vec3 aPos;
@@ -117,10 +114,7 @@ int main() {
 
     // Loop de renderização: roda até a janela ser fechada
     while (!glfwWindowShouldClose(window)) {
-        // Entrada: tecla ESC fecha a janela
-        if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-            glfwSetWindowShouldClose(window, true);
-
+       
         // Limpa o buffer de cor (pinta o fundo)
         glClear(GL_COLOR_BUFFER_BIT);
 
