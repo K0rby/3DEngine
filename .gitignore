@@ -59,4 +59,8 @@ Makefile
 # Swap/system files
 *.swp
 *.tmp
-s
+
+# Ignore Windows-specific GLFW binaries
+External/lib/
+External/bin/
+External/include/GLFW/
