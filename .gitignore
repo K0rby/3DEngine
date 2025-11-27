@@ -30,3 +30,33 @@
 *.exe
 *.out
 *.app
+
+# Build folders
+/build/
+/out/
+/bin/
+/obj/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Visual Studio build (Windows)
+*.sln
+*.vcxproj*
+*.pdb
+*.obj
+*.log
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Swap/system files
+*.swp
+*.tmp
+s
